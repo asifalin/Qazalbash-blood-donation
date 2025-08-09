@@ -3,7 +3,7 @@ import { Facebook } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 const Header = () => {
   return (
@@ -20,6 +20,9 @@ const Header = () => {
       <div className='flex items-center space-x-4'>
         <Link href="https://www.facebook.com/share/1EppZxzpXh/ " target="_blank" rel="noopener noreferrer">
           <FaFacebook className="h-6 w-6 text-blue-600 hover:text-blue-700 transition-colors" />
+        </Link>
+        <Link href="https://chat.whatsapp.com/K1TkgazaEGo62FZzO7S6HL?mode=ac_t " target="_blank" rel="noopener noreferrer">
+          <FaWhatsapp className="h-6 w-6 text-green-600 hover:text-green-700 transition-colors" />
         </Link>
         <Link href="https://www.instagram.com/qazalbash_blood_doners_society?utm_source=qr&igsh=cmZzdmFub3FhbGZp" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="h-6 w-6 text-red-700 hover:text-red-800 transition-colors" />

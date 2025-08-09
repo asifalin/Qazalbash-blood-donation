@@ -60,27 +60,27 @@ export default function Slider() {
       >
         {sliderData.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div
-              className="relative w-full h-screen bg-cover bg-center"
-              style={{ backgroundImage: `url(${slide.image})` }}
-            >
-              <div className="absolute inset-0 bg-black/30" />
-              <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
-                <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 max-w-4xl">
-                  {slide.title}
-                </h1>
-                <p className="text-lg md:text-xl text-gray-200 max-w-2xl mb-6">
-                  {slide.description}
-                </p>
-                <Button
-                  onClick={() => setIsAddDonorOpen(true)}
-                  className="bg-red-800 hover:bg-red-900 text-white px-8 py-5 text-lg"
-                >
-                  <UserPlus className="mr-2 h-5 w-5" />
-                  {slide.buttonText}
-                </Button>
-              </div>
-            </div>
+   <div
+  className="relative w-full min-h-[100dvh] bg-center bg-no-repeat bg-cover"
+  style={{ backgroundImage: `url(${slide.image})` }}
+>
+  <div className="absolute inset-0 bg-black/30" />
+  <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+    <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 max-w-4xl">
+      {slide.title}
+    </h1>
+    <p className="text-lg md:text-xl text-gray-200 max-w-2xl mb-6">
+      {slide.description}
+    </p>
+    <Button
+      onClick={() => setIsAddDonorOpen(true)}
+      className="bg-red-800 hover:bg-red-900 text-white px-8 py-5 text-lg"
+    >
+      <UserPlus className="mr-2 h-5 w-5" />
+      {slide.buttonText}
+    </Button>
+  </div>
+</div>
           </SwiperSlide>
         ))}
       </Swiper>

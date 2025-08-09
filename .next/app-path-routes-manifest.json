@@ -1,8 +1,0 @@
-{
-  "/_not-found/page": "/_not-found",
-  "/page": "/",
-  "/api/donors/[id]/route": "/api/donors/[id]",
-  "/api/donors/route": "/api/donors",
-  "/dashboard/page": "/dashboard",
-  "/login/page": "/login"
-}

@@ -7,6 +7,7 @@ import AddDonorDialog from "@/components/add-donor-dialog";
 import Image from "next/image";
 import { FaBook } from 'react-icons/fa';
 import Slider from "@/components/hero-section/slider";
+import About from "@/components/abut";
 
 export default function Home() {
   const [isAddDonorOpen, setIsAddDonorOpen] = useState(false);
@@ -67,14 +68,15 @@ export default function Home() {
   <h2 className="text-4xl font-extrabold text-red-700 mb-4">
     Honoring Our Esteemed Chairman
   </h2>
-  <h3 className="text-2xl text-gray-900 mb-6 font-semibold">
-    Jafar Hussain Qazalbash
+  <h3 className="text-2xl text-gray-900  font-semibold">
+   Akhon Ghulam Jafar Qazalbash
   </h3>
+  <p className="text-md text-gray-900  font-semibol mb-6">Founder Chairman Qazalbash Blood Donation Foundation Gilgit-Baltistan Pakistan</p>
 
   {/* One-Man Army Highlight */}
   <div className="bg-red-900 text-white p-4 rounded-lg mb-6 shadow-md">
     <p className="text-xl font-semibold text-center">
-      💪 Jafar Hussain is a One-Man Army — We are Proud of You!
+      💪 Akhon Ghulam Jafar Qazalbash is a One-Man Army — We are Proud of You!
     </p>
   </div>
 
@@ -84,7 +86,7 @@ export default function Home() {
       he has saved countless lives and continues to uplift communities.
     </p>
     <p className="text-gray-800 text-[17px] mt-3">
-      May Allah ﷻ bless Jafar Hussain Qazalbash with good health, strength, and endless barakah. Ameen.
+      May Allah ﷻ bless Akhon Ghulam Jafar Qazalbashwith good health, strength, and endless barakah. Ameen.
     </p>
   </div>
 
@@ -92,7 +94,7 @@ export default function Home() {
     <p className="text-red-700 text-lg font-medium italic mb-4">
       "Every blood donor is a soldier fighting for humanity"
       <span className="block text-red-800 font-semibold mt-2 text-right pr-2">
-        — Jafar Hussain Qazalbash
+        — Akhon Ghulam Jafar Qazalbash
       </span>
     </p>
 
@@ -124,20 +126,9 @@ export default function Home() {
 
   </div>
 </section>
-
-<section className="relative min-h-[500px] rounded-xl overflow-hidden my-16 shadow-lg">
-  {/* Background Image with Overlay */}
-  <div className="absolute inset-0">
-    <Image
-      src="/images/s2.jpg" // Replace with your background image
-      alt="Niyat Jan Memorial"
-      width={30} 
-      height={30}
-      className="w-full h-full object-center"
-    />
-    {/* <div className="absolute inset-0 bg-black bg-opacity-60"></div> */}
-  </div>
-  </section>
+<div>
+  <About/>
+</div>
 
         {/* Call to Action */}
         <section className="bg-red-800 text-white rounded-xl p-8 text-center">
